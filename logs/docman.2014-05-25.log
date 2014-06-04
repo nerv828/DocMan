@@ -1,0 +1,103 @@
+12:23:11.790 [main] INFO  c.n.f.BaseFunctionalTestCase - Jetty Server started at http://localhost:8082/docman
+12:23:14.224 [qtp787155269-28] WARN  com.nerv828.rest.TaskRestController - task with id 6 not found
+12:23:14.227 [main] WARN  o.s.web.client.RestTemplate - GET request for "http://localhost:8082/docman/api/v1/task/6" resulted in 404 (Not Found); invoking error handler
+12:23:14.519 [main] WARN  o.s.web.client.RestTemplate - POST request for "http://localhost:8082/docman/api/v1/task" resulted in 400 (Bad Request); invoking error handler
+12:23:14.561 [main] WARN  o.s.web.client.RestTemplate - PUT request for "http://localhost:8082/docman/api/v1/task/1" resulted in 400 (Bad Request); invoking error handler
+12:32:16.147 [main] INFO  c.n.f.BaseFunctionalTestCase - Jetty Server started at http://localhost:8082/docman
+12:32:18.026 [qtp170860084-25] WARN  com.nerv828.rest.TaskRestController - task with id 6 not found
+12:32:18.029 [main] WARN  o.s.web.client.RestTemplate - GET request for "http://localhost:8082/docman/api/v1/task/6" resulted in 404 (Not Found); invoking error handler
+12:32:18.407 [main] WARN  o.s.web.client.RestTemplate - POST request for "http://localhost:8082/docman/api/v1/task" resulted in 400 (Bad Request); invoking error handler
+12:32:18.445 [main] WARN  o.s.web.client.RestTemplate - PUT request for "http://localhost:8082/docman/api/v1/task/1" resulted in 400 (Bad Request); invoking error handler
+12:33:12.793 [main] INFO  c.n.f.BaseFunctionalTestCase - Jetty Server started at http://localhost:8082/docman
+12:33:14.604 [qtp1219340563-25] WARN  com.nerv828.rest.TaskRestController - task with id 6 not found
+12:33:14.607 [main] WARN  o.s.web.client.RestTemplate - GET request for "http://localhost:8082/docman/api/v1/task/6" resulted in 404 (Not Found); invoking error handler
+12:33:14.936 [main] WARN  o.s.web.client.RestTemplate - POST request for "http://localhost:8082/docman/api/v1/task" resulted in 400 (Bad Request); invoking error handler
+12:33:14.978 [main] WARN  o.s.web.client.RestTemplate - PUT request for "http://localhost:8082/docman/api/v1/task/1" resulted in 400 (Bad Request); invoking error handler
+12:36:32.534 [qtp8956272-26] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 42102, SQLState: 42S02
+12:36:32.559 [qtp8956272-26] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Table "DMUSER" not found; SQL statement:
+select user0_.id as id1_1_, user0_.login_name as login2_1_, user0_.name as name3_1_, user0_.password as password4_1_, user0_.register_date as register5_1_, user0_.roles as roles6_1_, user0_.salt as salt7_1_ from dmuser user0_ where user0_.login_name=? [42102-172]
+12:36:41.942 [qtp8956272-27] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 42102, SQLState: 42S02
+12:36:41.943 [qtp8956272-27] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Table "DMUSER" not found; SQL statement:
+select user0_.id as id1_1_, user0_.login_name as login2_1_, user0_.name as name3_1_, user0_.password as password4_1_, user0_.register_date as register5_1_, user0_.roles as roles6_1_, user0_.salt as salt7_1_ from dmuser user0_ where user0_.login_name=? [42102-172]
+12:44:07.235 [qtp8956272-26] WARN  c.n.service.account.AccountService - 操作员admin尝试删除超级管理员用户
+12:44:07.399 [qtp8956272-26] ERROR 500.jsp - 不能删除超级管理员用户
+com.nerv828.service.ServiceException: 不能删除超级管理员用户
+	at com.nerv828.service.account.AccountService.deleteUser(AccountService.java:71) ~[classes/:na]
+	at com.nerv828.service.account.AccountService$$FastClassByCGLIB$$76d951a.invoke(<generated>) ~[spring-core-3.2.3.RELEASE.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:698) ~[spring-aop-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150) ~[spring-aop-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96) ~[spring-tx-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260) ~[spring-tx-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94) ~[spring-tx-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172) ~[spring-aop-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:631) ~[spring-aop-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at com.nerv828.service.account.AccountService$$EnhancerByCGLIB$$bb257822.deleteUser(<generated>) ~[spring-core-3.2.3.RELEASE.jar:na]
+	at com.nerv828.web.account.UserAdminController.delete(UserAdminController.java:55) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) ~[na:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) ~[na:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:597) ~[na:1.6.0_45]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:219) ~[spring-web-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) ~[spring-web-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:745) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:686) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:80) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925) [spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856) [spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936) [spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827) [spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707) [javax.servlet-2.5.0.v201103041518.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812) [spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820) [javax.servlet-2.5.0.v201103041518.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652) [jetty-servlet-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320) [jetty-servlet-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:na]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291) [jetty-servlet-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) [shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) [shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.2.2.jar:1.2.2]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.2.2.jar:1.2.2]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) [shiro-core-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.2.2.jar:1.2.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259) [spring-web-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291) [jetty-servlet-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:180) [spring-orm-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291) [jetty-servlet-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291) [jetty-servlet-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443) [jetty-servlet-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:556) [jetty-security-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372) [jetty-servlet-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.Server.handle(Server.java:369) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:933) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:995) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644) [jetty-http-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:668) [jetty-io-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52) [jetty-io-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-7.6.11.v20130520.jar:7.6.11.v20130520]
+	at java.lang.Thread.run(Thread.java:662) [na:1.6.0_45]

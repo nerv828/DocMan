@@ -1,0 +1,15 @@
+com\nerv828\functional\BaseFunctionalTestCase.class
+com\nerv828\functional\gui\TaskGuiFT.class
+com\nerv828\functional\rest\TaskRestFT.class
+com\nerv828\data\TaskData.class
+com\nerv828\QuickStartServer.class
+com\nerv828\functional\rest\TaskRestFT$TaskList.class
+com\nerv828\functional\gui\UserAdminFT.class
+com\nerv828\functional\gui\ProfileFT.class
+com\nerv828\functional\BaseSeleniumTestCase.class
+com\nerv828\repository\JpaMappingTest.class
+com\nerv828\functional\gui\SecurityFT.class
+com\nerv828\data\UserData.class
+com\nerv828\repository\TaskDaoTest.class
+com\nerv828\service\account\AccountServiceTest.class
+com\nerv828\functional\gui\RegisterFT.class

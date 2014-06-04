@@ -1,11 +1,11 @@
 package com.nerv828.entity;
 
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+import javax.persistence.*;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.collect.ImmutableList;
 
 @Entity
-@Table(name = "dmuser")
+@Table(name = "dm_user")
 public class User extends IdEntity {
 	private String loginName;
 	private String name;
@@ -24,7 +24,17 @@ public class User extends IdEntity {
 	private String password;
 	private String salt;
 	private String roles;
-	private Date registerDate;
+	private Date registerDate  ;
+    @ManyToMany(mappedBy="users")
+    public Set<Group> getGroups() {
+        return groups;
+    }
+
+    public void setGroups(Set<Group> groups) {
+        this.groups = groups;
+    }
+
+    private Set<Group> groups = new HashSet<Group>();
 
 	public User() {
 	}
